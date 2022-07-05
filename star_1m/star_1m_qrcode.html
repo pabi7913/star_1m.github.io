@@ -1,17 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icon-->
+    <link rel="shortcut icon" href="img/star.ico" type="image/x-icon">
+    <link rel="icon" href="img/star.ico" type="image/x-icon">
+
     <title>star_1m_qrcode</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 中文：Kiwi Maru -->
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
     <style>
-        body{
-            margin:0;
+        body {
+            background-image: url(/img/bg_star.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        .action_bt {
+            position:relative;
+            height:100vh;
+        }
+        .action_bt>img{
+            width:50vh;
+        }
+        .action_bt_t{
+            font-family: 'Kiwi Maru', serif;
+            font-size: 1.5rem;
+            text-align: center;
+            color: rgb(255, 220, 0);
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        .vedio{
+            width: 100%; 
+            height: 100%; 
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: 1;
+        }
+        .vedio>iframe{
+            width: 100%; 
+            height: 100%; 
         }
     </style>
 </head>
+
 <body>
-    <div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/e/mes623" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div>
+    <div class="action_bt animate__animated animate__bounceOutDown animate__delay-2s">
+        <img class="action_bt_t animate__animated animate__flash" src="/img/bg_star_line.png" alt="">
+        <div class="action_bt_t animate__animated animate__fadeIn animate__delay-1s">
+            <div>星星寶包</div>
+            <div>滿月了～</div>
+        </div>
+    </div>
+    <div class="vedio animate__animated animate__fadeIn animate__delay-3s">
+        <iframe
+            src="https://streamable.com/e/mes623?autoplay=1&loop=1" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
+               </div>
 </body>
+
 </html>
